@@ -91,7 +91,7 @@ func (p *Parser) expectPeek(t token.TokenType) bool {
 }
 
 func (p *Parser) curTokenIs(t token.TokenType) bool {
-	return p.peekToken.Type == t
+	return p.curToken.Type == t
 }
 
 func (p *Parser) peekTokenIs(t token.TokenType) bool {
